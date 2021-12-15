@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tip Cal</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="container">
+        <h1>Tip Calculator</h1>
+        <form action="">
+            <div class="control">
+                <p>How much was your Total bil?</p>
+                <p class="input">
+                    ₹
+                    <input type="number" name="" id="totalBill" placeholder="Total Bill Amount">
+                </p>
+            </div>
+            <div class="control">
+                <p>How was your service?</p>
+                <select name="" id="tipPercent">
+                    <option disabled selected value="0">Select service</option>
+                    <option value="0.3">30% Excellent</option>
+                    <option value="0.2">20% Better</option>
+                    <option value="0.1">10% Good</option>
+                    <option value="0.0">0% Pgioor</option>
+                </select>
+            </div>
+            <p>Split the bill into</p>
+            <input type="number" name="" id="split" placeholder="0"> <br>
+        </form>
+        <button id="calculate">Calculate</button>
+
+        <div class="totalTip">
+            <p>Total Per Person</p>
+            <p class="tip">₹ <span id="tip">0.00</span> </p>
+        </div>
+
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
